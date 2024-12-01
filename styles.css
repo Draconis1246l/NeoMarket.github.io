@@ -1,0 +1,174 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Fondo oscuro */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2d2d2d; /* Fondo de encabezado oscuro */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #66cc66; /* Verde medio oscuro */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: #444; /* Fondo de sección oscuro */
+    border-radius: 10px;
+}
+
+h2 {
+    color: #66cc66; /* Verde medio oscuro */
+}
+
+/* Estilo específico para la sección "Sobre Nosotros" */
+.contenido-sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-sobre-nosotros {
+    max-width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.texto-sobre-nosotros p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Estilo para las reseñas */
+#reseñas .reseña {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#reseñas .reseña img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#reseñas .reseña p {
+    font-size: 1.1em;
+}
+
+/* Sección "Servicios" */
+#servicios .servicio {
+    background-color: #555;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#servicios .servicio img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#servicios .servicio h3 {
+    color: #66cc66;
+    margin-top: 15px;
+}
+
+#servicios .servicio p {
+    margin: 10px 0;
+}
+
+#servicios img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d2d2d; /* Fondo oscuro */
+}
+
+footer a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+footer .whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Color verde de WhatsApp */
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer .whatsapp img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+footer .whatsapp a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/* Animaciones con AOS */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.5s ease-out;
+}
+
+[data-aos="fade-left"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
